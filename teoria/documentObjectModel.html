@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kurs</title>
+    <style>
+        body{
+           height: 200vh; 
+        }
+        h1,
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 10px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        .red{
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <h1>Kurs JavaScript</h1>
-    <h2>Documen Object Model (DOM)</h2>
+    <h2 class="title">Documen Object Model <strong>DOM</strong></h2>
+    <ul>
+        <li id="first">First item</li>
+        <li class="even">Second item</li>
+        <li>Third item</li>
+        <li class="even">Fourth item</li>
+        <li>Fifth item</li>
+    </ul>
     <script type="text/javascript" src="documentObjectModel.js"></script>
 </body>
 </html>
