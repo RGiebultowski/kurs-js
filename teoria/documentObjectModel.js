@@ -133,3 +133,13 @@ const divElement = document.createElement('div');
 divElement.textContent = "New Div Element";
 divElement.style.backgroundColor = "#aaa";
 document.body.appendChild(divElement);
+
+// DOM - obiektowy model dokumentu - model bieżącej strony internetowej, której głównym elementem jest document
+
+// window - obiekt globalny dla środowiska uruchomieniowego jakim jest przeglądarka. Zawiera mnóstwo metod i właściwości do wykorzystania. Window reprezentuje okno przeglądarki (otwartą kartę)
+
+console.log(window);
+
+// setTinerval
+let timer = 0;
+// setInterval(() => console.log(++timer), 1000);
