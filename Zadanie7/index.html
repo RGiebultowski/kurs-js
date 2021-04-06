@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+    <title>Kamień, Papier, Nożyce - gra</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: roboto, sans-serif;
+        }
+        h1{
+            text-align: center;
+            margin: 20px 0;
+        }
+        h3{
+            margin: 20px 0;
+        }
+        .panel{
+            margin: 20px;
+        }
+        .panel-left,
+        .panel-right {
+            display: inline-block;
+            width: 48%;
+            overflow: hidden;
+            margin: 40px auto 0;
+            text-align: center;
+        }
+        .panel-left p{
+            font-size: 20px;
+        }
+        .panel h3{
+            text-align: center;
+        }
+        h1,
+        h3{
+            text-align: uppercase;
+        }
+        h2{
+            font-size: 40px;
+        }
+        .select{
+            overflow: hidden;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+        .select img{
+            width: 200px;
+            margin: 20px;
+            display: inline-block;
+        }
+        button{
+            display: block;
+            padding: 5px 20px;
+            border: 2px solid black;
+            text-transform: uppercase;
+            background-color: white;
+            font-weight: bold;
+            margin: 10px auto;
+            transition: .3s;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color:rgb(20, 20, 20);
+            color: white;
+        }
+        span{
+            font-weight:  bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kamień, Papier, Nożyce</h1>
+    <div class="select">
+        <h3>Wybierz:</h3>
+        <img data-option="kamien" src="kamien.png" alt="" title="KAMIEŃ">
+        <img data-option="papier" src="papier.png" alt="" title="PAPIER">
+        <img data-option="nozyce" src="nozyce.png" alt="" title="NOŻYCE">
+    </div>
+    <button class="start">Graj</button>
+
+    <div class="panel-left">
+        <h3>Wynik: </h3>
+        <p>Twój wybór: <span data-summary="yourChoice"></span></p>
+        <p>Wybór przeciwnika: <span data-summary="aiChoice"></span></p>
+        <h2>Wygrał: <span data-summary="winner"></span></h2>
+    </div>
+    <div class="panel-right">
+        <h3>Wyniki: </h3>
+        <p class="numbers"> liczba gier: <span>0</span></p>
+        <p class="wins"> wygrane: <span>0</span></p>
+        <p class="losses"> przegrane: <span>0</span></p>
+        <p class="draws"> remisy: <span>0</span></p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
